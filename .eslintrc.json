@@ -42,6 +42,8 @@
     "react/jsx-no-bind": "off",
     "eslintjsx-a11y/click-events-have-key-events": "off",
     "eslintjsx-a11y/no-static-element-interactions": "off",
+    "react/no-array-index-key": "off",
+    "no-param-reassign": "off",
     "react/function-component-definition": [
       "error",
       {
