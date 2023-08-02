@@ -11,3 +11,9 @@ export interface IArticle {
   publishedAt: string;
   content: string;
 }
+
+export interface IArticlesResponse {
+  status: string;
+  totalResults: number;
+  articles: IArticle[];
+}

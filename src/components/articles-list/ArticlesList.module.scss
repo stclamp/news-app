@@ -5,3 +5,12 @@
   gap: 20px;
   margin: 20px 0;
 }
+
+.search {
+  display: flex;
+
+  .search-button {
+    width: 100px;
+    margin-left: 15px;
+  }
+}
