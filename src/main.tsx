@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import App from './App';
-import '@/assets/styles/_reset.scss';
 import { store } from './store/store';
+import '@/assets/styles/_reset.scss';
+import '@/assets/styles/_global.scss';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
