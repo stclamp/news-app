@@ -1,6 +1,7 @@
 import { FC, useMemo } from 'react';
-import styles from './ArticleCard.module.scss';
+import { EStatic } from '@/types';
 import defaultImage from '@/assets/images/default.png';
+import styles from './ArticleCard.module.scss';
 
 interface ArticleCardProps {
   title: string;
@@ -21,12 +22,20 @@ const ArticleCard: FC<ArticleCardProps> = ({
         <p className={styles.description}>
           {description.substring(0, 150)}...
           <a target="_blank" href={link} rel="noreferrer">
-            Read more
+            {EStatic.READ_MORE}
           </a>
         </p>
       );
     }
-    return <p className={styles.description}>{description}</p>;
+
+    return (
+      <p className={styles.description}>
+        {description}
+        <a target="_blank" href={link} rel="noreferrer">
+          {EStatic.READ_MORE}
+        </a>
+      </p>
+    );
   }, [description]);
   return (
     <div className={styles['article-card-wrapper']}>

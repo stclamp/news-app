@@ -1,13 +1,16 @@
 import { Toaster } from 'react-hot-toast';
-import ArticlesList from './components/articles-list/ArticlesList';
-import Container from './components/container/Container';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
     <div className="App">
-      <Container>
-        <ArticlesList />
-      </Container>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+
       <Toaster />
     </div>
   );

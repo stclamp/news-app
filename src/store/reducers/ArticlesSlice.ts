@@ -1,12 +1,6 @@
 import { PayloadAction, createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { IArticle, IArticlesResponse } from '../../types/index';
-
-interface ArticlesState {
-  articles: IArticle[];
-  isLoading: boolean;
-  error: string;
-}
+import { ArticlesState, IArticle, IArticlesResponse } from '@/types/index';
 
 interface ArticlesParams {
   query: string;
@@ -39,7 +33,11 @@ export const getArticles = createAsyncThunk(
 export const articlesSlice = createSlice({
   name: 'articles',
   initialState,
-  reducers: {},
+  reducers: {
+    clearArticles(store) {
+      store.articles = [];
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(getArticles.pending, (state) => {
       state.isLoading = true;
@@ -50,7 +48,7 @@ export const articlesSlice = createSlice({
       (state, action: PayloadAction<IArticle[]>) => {
         state.isLoading = false;
         state.error = '';
-        if (state.articles.length === 0) {
+        if (!state.articles.length) {
           state.articles = action.payload;
         } else {
           state.articles.push(...action.payload);
@@ -67,5 +65,7 @@ export const articlesSlice = createSlice({
     });
   },
 });
+
+export const { actions } = articlesSlice;
 
 export default articlesSlice.reducer;

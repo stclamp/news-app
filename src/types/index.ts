@@ -17,3 +17,17 @@ export interface IArticlesResponse {
   totalResults: number;
   articles: IArticle[];
 }
+
+export interface ArticlesState {
+  articles: IArticle[];
+  isLoading: boolean;
+  error: string;
+}
+
+export enum EStatic {
+  READ_MORE = 'Read more',
+  SEARCH_HERE = 'Search here',
+  SEARCH = 'Search!',
+  LOAD_MORE = 'Load more',
+  NO_RESULTS = 'No results found',
+}
