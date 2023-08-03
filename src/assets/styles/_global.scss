@@ -1,0 +1,23 @@
+@import '@/assets/styles/utils/_variables.scss';
+
+body {
+  font-family: $ff-roboto;
+}
+
+.App {
+  padding: 20px 0;
+}
+
+.not-found-link {
+  text-align: center;
+  color: $color-blue;
+  margin: 50px auto;
+  display: block;
+  text-decoration: underline;
+}
+
+.not-found-image {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}

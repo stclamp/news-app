@@ -1,0 +1,34 @@
+@import '@/assets/styles/utils/_variables.scss';
+
+.article-card-wrapper {
+  border-radius: 12px;
+  background: $color-white;
+  box-shadow: $shadow;
+  padding: 15px;
+}
+
+.image {
+  margin-bottom: 15px;
+  img {
+    max-height: 120px;
+    object-fit: cover;
+  }
+}
+
+.title {
+  font-size: $fs-16;
+  font-weight: 500;
+  margin-bottom: 15px;
+  min-height: 60px;
+}
+
+.description {
+  font-size: $fs-14;
+  font-weight: 300;
+  line-height: 20px;
+
+  a {
+    color: $color-blue;
+    text-decoration: underline;
+  }
+}

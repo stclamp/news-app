@@ -1,0 +1,15 @@
+@import '@/assets/styles/utils/_variables.scss';
+
+.empty-wrapper {
+  max-width: 400px;
+  height: 100%;
+  margin: 20px auto;
+  img {
+    max-width: 400px;
+  }
+}
+
+.text {
+  font-size: $fs-26;
+  text-align: center;
+}

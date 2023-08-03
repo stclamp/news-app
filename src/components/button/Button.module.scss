@@ -1,0 +1,25 @@
+@import '@/assets/styles/utils/_variables.scss';
+
+.button {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: $color-pink;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $color-pink-dark;
+  }
+}
+
+@media (max-width: 720px) {
+  .button {
+    &:hover {
+      background-color: $color-pink;
+    }
+  }
+}

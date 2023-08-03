@@ -1,0 +1,12 @@
+@import '@/assets/styles/utils/_variables.scss';
+@import '@/assets/styles/utils/_mixins.scss';
+
+.input {
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  background-color: $color-light;
+  padding: 15px;
+  @include flex-center;
+  border: 1px solid $color-gray;
+}
