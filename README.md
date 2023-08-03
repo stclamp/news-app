@@ -1,6 +1,6 @@
 # ViteRC ❤️‍🔥
 
-A modern minimal Vite + React + TypeScript template with pre-configured ESLint (with Airbnb JS/React rules), Prettier, Testing with Jest and Git hooks with Husky out of the box 📦
+A modern minimal Vite + React + TypeScript app for news search with ESLint (with Airbnb JS/React rules), Prettier, Testing with Jest and Git hooks with Husky 📦
 
 ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -11,7 +11,8 @@ A modern minimal Vite + React + TypeScript template with pre-configured ESLint (
 ![Testing Library](https://img.shields.io/badge/testing%20library-E33332?style=for-the-badge&logo=testing-library&logoColor=white)
 ![Commitlint](https://img.shields.io/badge/commitlint-000000?style=for-the-badge&logo=commitlint&logoColor=white)
 
-![Screenshot](https://i.imgur.com/4dpYsyG.png)
+![Screenshot](https://github.com/stclamp/news-app/assets/45912881/23caf32d-2fc7-4078-be8d-5f78e96c0bdf)
+
 
 ## Features
 
@@ -25,19 +26,12 @@ A modern minimal Vite + React + TypeScript template with pre-configured ESLint (
 - ⌨️ Absolute Imports
 - 📑 [Commitlint](https://commitlint.js.org/) - Linting your commits based on commit convention
 
-## Why
-
-This template arose out of a need to unite all the above libraries, which were not found in the existing Vite templates. This template has an active contributors that will update everything on this template as needed
-
 ## Usage
 
 ```bash
 npx degit potreco/viterc my-app
 
 cd my-app
-
-# Required if you want a repository and work with Git hooks
-git init
 
 yarn install
 
@@ -70,15 +64,6 @@ To correctly functioning (code and tests) of absolute imports, you should add so
 
 We already writed some absolute imports on these files, so if you wanna more paths or edit some, feel free to do.
 If your not safe about it or have some question, send us a thread on [Github Discussions](https://github.com/potreco/viterc/discussions/new?category=q-a) asking for, we were happy to help
-
-## TODO
-
-- [x] Eslint
-- [x] Prettier
-- [x] Husky
-- [x] Testing Tools
-- [x] Absolute imports
-- [x] Commit linting
 
 ## License
 
